@@ -2,7 +2,7 @@
 
 ### 使用技術與資源
 * 使用flask架站
-* 使用線上模板
+* 使用線上免費模板(https://themewagon.com/theme-price/free)
 
 ### 電容偵測網站
 *  實作首頁與偵測網頁
