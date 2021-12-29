@@ -1,0 +1,160 @@
+
+/* ----------------
+    全局樣式
+------------------- */
+body{
+    font-size: 1rem !important;
+}
+
+
+
+/* ----------------
+    index css
+------------------- */
+/* 按鈕樣式 */
+.btn-main {
+    color: #fff;
+    background-color: #66B3FF;
+    border-color: #66B3FF;
+}
+
+.btn-main:hover {
+    color: #fff;
+    background-color: #66B3FF;
+    border-color: #66B3FF;
+}
+
+
+/* 圖片顯示樣式 */
+
+.ouline-img{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.img-title {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.img-title>img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-info {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.img-info>* {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+}
+
+/* 檔案說明文字樣式 */
+.file-size {
+    color: #5B5B5B;
+    font-size: .875rem;
+}
+
+.data-row>div>* {
+    align-self: center;
+}
+
+.data-row {
+    position: relative;
+    border-top: 1px solid #F0F0F0;
+    padding: 10px 0;
+}
+
+/* 移除按鈕 */
+.btn-remove {
+    flex-shrink: 0;
+    padding-left: 8px;
+    padding-right: 16px;
+    color: #000;
+    margin-right: 10px;
+}
+
+
+.fas.fa-minus {
+    color: #EA0000;
+}
+
+/*自訂scrollbar樣式 */
+#idtable{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#idtable::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+#idtable::-webkit-scrollbar-thumb {
+    background-color: rgb(220, 220, 220);
+    border-radius: 2.5px;
+}
+
+
+
+/* 圖片進場動畫 */
+.show {
+    animation-name: show;
+    animation-duration: .5s;
+    animation-timing-function: cubic-bezier(.08,.82,.32,.94);
+    animation-fill-mode: both;
+}
+
+@keyframes show {
+    0% {
+        height: 0;
+        opacity: 0;
+        padding:0 0;
+        border:0 px;
+    }
+    100% {
+        height: 122px;
+        opacity: 1;
+        padding:10px 0;
+        border:1 px;
+    }
+}
+
+/* 白色外框 */
+.card-body-vh{
+    height: 70vh;
+}
+
+/* 底圖icon */
+.bg-fileicon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    opacity: 0.2;
+}
+
+
+/* ----------------
+    history css
+------------------- */
+.table-min-width{
+    min-width: 500px;
+}
